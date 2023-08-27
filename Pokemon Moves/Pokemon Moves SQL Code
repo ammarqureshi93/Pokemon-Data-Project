@@ -1,3 +1,40 @@
+/*Moves introduced in Gen 1*/
+SELECT Gen
+FROM Pokemon_Moves
+WHERE Gen='I';
+
+/*Moves introduced in Gen 2*/
+SELECT Gen
+FROM Pokemon_Moves
+WHERE Gen='II';
+
+/*Moves introduced in Gen 3*/
+SELECT Gen
+FROM Pokemon_Moves
+WHERE Gen='III';
+
+/*Moves introduced in Gen 4*/
+SELECT Gen
+FROM Pokemon_Moves
+WHERE Gen='IV';
+
+/*Moves introduced in Gen 5*/
+SELECT Gen
+FROM Pokemon_Moves
+WHERE Gen='V';
+
+/*Moves introduced in Gen 6*/
+SELECT Gen
+FROM Pokemon_Moves
+WHERE Gen='VI';
+
+/*Moves introduced in Gen 7*/
+SELECT Gen
+FROM Pokemon_Moves
+WHERE Gen='VII';
+
+/*Moves introduced in Gen 8*/
+SELECT Gen
 FROM Pokemon_Moves
 WHERE Gen='VIII';
 
@@ -6,80 +43,100 @@ SELECT Gen
 FROM Pokemon_Moves
 WHERE Gen='IX';
 
+/*Moves that are Normal Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Normal';
 
+/*Moves that are Fire Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Fire';
 
+/*Moves that are Water Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Water';
 
+/*Moves that are Grass Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Grass'
 
+/*Moves that are Electric Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Electric'
 
+/*Moves that are Ice Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Ice'
 
+/*Moves that are Fighting Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Fighting'
 
-
+/*Moves that are Poison Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Poison'
 
+/*Moves that are Ground Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Ground'
 
+/*Moves that are Flying Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Flying'
 
+
+/*Moves that are Psychic Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Psychic'
 
+
+/*Moves that are Bug Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Bug'
 
+/*Moves that are Rock Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Rock'
 
+/*Moves that are Ghost Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Ghost'
 
+
+/*Moves that are Dark Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Dark'
 
-
+/*Moves that are Dragon Type*/
 SELECT Type
 FROM Pokemon_Moves
 WHERE Type='Dragon'
 
+/*Moves that are Steel Type*/
 SELECT TYPE
 FROM Pokemon_Moves
 WHERE Type='Steel'
 
+/*Moves that are Fairy Type*/
 SELECT TYPE
 FROM Pokemon_Moves
 WHERE Type='Fairy'
 
+/*Showing Normal type moves in every generation*/
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Normal' AND Gen='I';
@@ -117,6 +174,10 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Normal' AND Gen='IX';
 
+/*End of Normal moves in every generation*/
+
+/*Showing Fire type moves in every generation*/
+
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Fire' AND Gen='I';
@@ -124,7 +185,6 @@ WHERE Type='Fire' AND Gen='I';
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Fire' AND Gen='II';
-
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -155,6 +215,10 @@ WHERE Type='Fire' AND Gen='VIII';
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Fire' AND Gen='IX';
+
+/*End of Fire moves in every generation*/
+
+/*Showing Water type moves in every generation*/
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -192,6 +256,10 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Water' AND Gen='IX';
 
+/*End of Water moves in every generation*/
+
+/*Showing Grass type moves in every generation*/
+
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Grass' AND Gen='I';
@@ -228,6 +296,10 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Grass' AND Gen='IX';
 
+/*End of Grass moves in every generation*/
+
+/*Showing Electric type moves in every generation*/
+
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Electric' AND Gen='I';
@@ -248,7 +320,6 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Electric' AND Gen='V';
 
-
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Electric' AND Gen='VI';
@@ -265,6 +336,9 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Electric' AND Gen='IX';
 
+/*End of Electric moves in every generation*/
+
+/*Showing Ice type moves in every generation*/
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -302,6 +376,10 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Ice' AND Gen='IX';
 
+/*End of Ice moves in every generation*/
+
+/*Showing Fighting type moves in every generation*/
+
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Fighting' AND Gen='I';
@@ -334,10 +412,13 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Fighting' AND Gen='IX';
 
+/*End of Fighting moves in every generation*/
+
+/*Showing Poison type moves in every generation*/
+
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Poison' AND Gen='I';
-
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -348,17 +429,13 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Poison' AND Gen='III';
 
-
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Poison' AND Gen='IV';
 
-
-
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Poison' AND Gen='V';
-
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -376,17 +453,17 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Poison' AND Gen='IX';
 
+/*End of Poison moves in every generation*/
+
+/*Showing Ground type moves in every generation*/
 
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Ground' AND Gen='I';
 
-
-
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Ground' AND Gen='II';
-
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -416,6 +493,10 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Ground' AND Gen='IX';
 
+/*End of Ground moves in every generation*/
+
+/*Showing Flying type moves in every generation*/
+
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Flying' AND Gen='I';
@@ -430,50 +511,37 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Flying' AND Gen='III';
 
-
-
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Flying' AND Gen='IV';
-
-
 
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Flying' AND Gen='V';
 
-
-
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Flying' AND Gen='VI';
-
-
 
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Flying' AND Gen='VII';
 
-
-
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Flying' AND Gen='VIII';
-
-
 
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Flying' AND Gen='IX';
 
+/*End of Flying moves in every generation*/
 
-
+/*Showing Psychic type moves in every generation*/
 
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Psychic' AND Gen='I';
-
-
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -506,6 +574,10 @@ WHERE Type='Psychic' AND Gen='VIII';
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Psychic' AND Gen='IX';
+
+/*End of Psychic moves in every generation*/
+
+/*Showing Bug type moves in every generation*/
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -543,6 +615,10 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Bug' AND Gen='IX';
 
+/*End of Bug moves in every generation*/
+
+/*Showing Rock type moves in every generation*/
+
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Rock' AND Gen='I';
@@ -579,6 +655,9 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Rock' AND Gen='IX';
 
+/*End of Rock moves in every generation*/
+
+/*Showing Ghost type moves in every generation*/
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -587,7 +666,6 @@ WHERE Type='Ghost' AND Gen='I';
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Ghost' AND Gen='II';
-
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -617,10 +695,13 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Ghost' AND Gen='IX';
 
+/*End of Ghost moves in every generation*/
+
+/*Showing Dark type moves in every generation*/
+
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Dark' AND Gen='I';
-
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -654,6 +735,9 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Dark' AND Gen='IX';
 
+/*End of Dark moves in every generation*/
+
+/*Showing Dragon type moves in every generation*/
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -691,6 +775,10 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Dragon' AND Gen='IX';
 
+/*End of Dragon moves in every generation*/
+
+/*Showing Steel type moves in every generation*/
+
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Steel' AND Gen='I';
@@ -698,7 +786,6 @@ WHERE Type='Steel' AND Gen='I';
 SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Steel' AND Gen='II';
-
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -728,6 +815,9 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Steel' AND Gen='IX';
 
+/*End of Steel moves in every generation*/
+
+/*Showing Fairy type moves in every generation*/
 
 SELECT Type,Gen
 FROM Pokemon_Moves
@@ -766,22 +856,27 @@ SELECT Type,Gen
 FROM Pokemon_Moves
 WHERE Type='Fairy' AND Gen='IX';
 
-/*End of Pokemon types in every generation*/
+/*End of Steel moves in every generation*/
 
+/*End of Pokemon Moves of every type in every generation ends here*/
+
+/*Showing all Physical type moves in the series*/
 SELECT Category
 FROM Pokemon_Moves
 WHERE Category='Physical';
 
-
+/*Showing all Special type moves in the series*/
 SELECT Category
 FROM Pokemon_Moves
 WHERE Category='Special';
 
-
+/*Showing all Status type moves in the series*/
 SELECT Category
 FROM Pokemon_Moves
 WHERE Category='Status';
 
+
+/*Showing all moves based on category in genration I*/
 SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Physical' AND Gen='I';
@@ -794,6 +889,9 @@ SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Status' AND Gen='I';
 
+/*End of all Gen 1 category moves*/
+
+/*Showing all moves based on category in genration II*/
 SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Physical' AND Gen='II';
@@ -806,6 +904,9 @@ SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Status' AND Gen='II';
 
+/*End of all Gen I1 category moves*/
+
+/*Showing all moves based on category in generation III*/
 SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Physical' AND Gen='III';
@@ -818,10 +919,13 @@ SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Status' AND Gen='III';
 
+/*End of all Gen II1 category moves*/
+
+/*Showing all moves based on category in generation IV*/
+
 SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Physical' AND Gen='IV';
-
 
 SELECT Category,Gen
 FROM Pokemon_Moves
@@ -830,6 +934,10 @@ WHERE Category='Special' AND Gen='IV';
 SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Status' AND Gen='IV';
+
+/*End of all Gen IV category moves*/
+
+/*Showing all moves based on category in generation V*/
 
 SELECT Category,Gen
 FROM Pokemon_Moves
@@ -843,6 +951,10 @@ SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Status' AND Gen='V';
 
+/*End of all Gen V category moves*/
+
+/*Showing all moves based on category in generation VI*/
+
 SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Physical' AND Gen='VI';
@@ -855,6 +967,9 @@ SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Status' AND Gen='VI';
 
+/*End of all Gen VI category moves*/
+
+/*Showing all moves based on category in generation VII*/
 
 SELECT Category,Gen
 FROM Pokemon_Moves
@@ -864,10 +979,14 @@ SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Special' AND Gen='VII';
 
-
 SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Status' AND Gen='VII';
+
+/*End of all Gen VII category moves*/
+
+
+/*Showing all moves based on category in generation VIII*/
 
 SELECT Category,Gen
 FROM Pokemon_Moves
@@ -881,6 +1000,11 @@ SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Status' AND Gen='VIII';
 
+
+/*End of all Gen VIII category moves*/
+
+/*Showing all moves based on category in generation IX*/
+
 SELECT Category,Gen, Name
 FROM Pokemon_Moves
 WHERE Category='Physical' AND Gen='IX';
@@ -893,28 +1017,33 @@ SELECT Category,Gen
 FROM Pokemon_Moves
 WHERE Category='Status' AND Gen='IX';
 
-/*End of type category*/
+/*End of all Gen IX category moves*/
 
+/*End of category moves in every generation*/
+
+/*Showing the lowest PP values of every moves*/
 SELECT MIN(PP)
 FROM Pokemon_Moves;
 
+/*Shows all PP values of 1*/
 SELECT DISTINCT Name
 FROM Pokemon_Moves
 WHERE PP='1';
 
+/*Showing the highest PP values of every moves*/
 SELECT MAX(PP)
 FROM Pokemon_Moves;
 
+/*Shows all PP values of 40*/
 SELECT DISTINCT Name
 FROM Pokemon_Moves
 WHERE PP='40';
 
 
+/*Shows moves that are physical based*/
 SELECT COUNT(Type)
 FROM Pokemon_Moves
 WHERE Category='Physical' AND Type='Normal';
-
-
 
 SELECT COUNT(Type)
 FROM Pokemon_Moves
@@ -925,12 +1054,9 @@ SELECT COUNT(Type)
 FROM Pokemon_Moves
 WHERE Category='Physical' AND Type='Water';
 
-
-
 SELECT COUNT(Type)
 FROM Pokemon_Moves
 WHERE Category='Physical' AND Type='Grass';
-
 
 SELECT COUNT(Type)
 FROM Pokemon_Moves
@@ -998,8 +1124,9 @@ SELECT COUNT(Type)
 FROM Pokemon_Moves
 WHERE Category='Physical' AND Type='Fairy';
 
-/*Alternative method*/
+/*End of showing physical based moves*/
 
+/*Showing top three moves in every category*/
 SELECT TOP 3 Type,Category
 FROM Pokemon_Moves
 WHERE Category ='Physical';
@@ -1013,7 +1140,6 @@ FROM Pokemon_Moves
 WHERE Category ='Status';
 
 /*Finding highest and lowest power*/
-
 SELECT Power,Name
 FROM Pokemon_Moves
 ORDER By Power DESC;
@@ -1023,7 +1149,6 @@ FROM Pokemon_Moves
 ORDER By Power ASC;
 
 /*Finding Pokemon moves with the highest accuracy and lowest accuracy*/
-
 SELECT Accuracy
 FROM Pokemon_Moves
 WHERE Accuracy='100%';
