@@ -1,5 +1,9 @@
 # Pokemon-Data-Project
 
+**Author**: Ammar Qureshi <br />
+**Email**: ammarqureshi1993@gmail.com <br />
+**LinkedIn**: https://www.linkedin.com/in/ammar-qureshi/  <br />
+
 This is a project that I have done with the video game series called Pokemon.
 
 I have divided the project into smaller parts such as Pokemon games, moves, and species. These parts pertain to the various aspects of the game series. 
