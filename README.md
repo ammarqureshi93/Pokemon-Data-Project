@@ -4,7 +4,7 @@
 **Email**: ammarqureshi1993@gmail.com <br />
 **LinkedIn**: https://www.linkedin.com/in/ammar-qureshi/  <br />
 
-## Introduction
+# Introduction
 
 This is a project that I have done with the video game series called Pokemon.
 
