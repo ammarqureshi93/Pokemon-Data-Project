@@ -1,26 +1,35 @@
+/*Selecting sales of pokemon games and showing most sales to least sales*/
 SELECT Sales FROM Pokemon_games
 ORDER BY Sales DESC;
 
+/*Selecting sales of pokemon games and showing least sales to most sales*/
 SELECT Sales FROM Pokemon_games
 ORDER BY Sales ASC;
 
+/*Selecting gross of pokemon games and showing most gross to least gross*/
 SELECT Gross FROM Pokemon_games
 ORDER BY Gross DESC;
 
+/*Selecting gross of pokemon games and showing least gross to most gross*/
 SELECT Sales FROM Pokemon_games
 ORDER BY Gross ASC;
 
+/*Shows all Gameboy Pokemon games*/
 SELECT Platform, Titles FROM Pokemon_Games
 WHERE Platform = 'GB';
 
+/*Shows all Gameboy Advance Pokemon games*/
 SELECT Platform, Titles FROM Pokemon_Games
 WHERE Platform = 'GBA';
 
+/*Shows all Nintendo DS Pokemon games*/
 SELECT Platform, Titles FROM Pokemon_Games
 WHERE Platform = 'DS';
 
+/*Shows all Nintendo 3DS Pokemon games*/
 SELECT Platform, Titles FROM Pokemon_Games
 WHERE Platform = '3DS';
 
+/*Shows all Switch Pokemon games*/
 SELECT Platform, Titles FROM Pokemon_Games
 WHERE Platform = 'Switch';
